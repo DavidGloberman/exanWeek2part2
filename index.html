@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BATTALION FORCE MANAGEMENT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <main id="home-page">
+      <p>BATTALION FORCE MANAGEMENT</p>
+
+      <form id="form-wrapper">
+        <input
+          placeholder="Full Name"
+          id="Full-name"
+          name="Full-name"
+          type="text"
+          required
+        />
+        <input placeholder="Rank" id="rank" name="rank" type="text" required />
+        <input
+          placeholder="Position"
+          id="position"
+          name="position"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Platoon"
+          id="platoon"
+          name="platoon"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Mission Time (seconds)"
+          id="mission-time"
+          name="mission-time"
+          type="number"
+          min="0"
+          required
+        />
+        <select id="status" name="status">
+          <option value="Active">Active</option>
+          <option value="Reserve">Reserve</option>
+          <option value="Retired">Retired</option>
+        </select>
+        <input value="Add Personnel" id="submit" name="submit" type="submit" />
+      </form>
+
+      <p>FORCES OVERVIEW</p>
+
+      <table id="table-wrapper">
+        <tr id="heder">
+          <th id="order">
+            <div id="ascending">▲</div>
+            <div>Full Nama</div>
+            <div id="descending">▼</div>
+          </th>
+          <th>RANK</th>
+          <th>POSITION</th>
+          <th>PLATOON</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </table>
+    </main>
+
+    <main id="edit-page">
+      <p>EDIT PERSONNEL</p>
+      <form id="form-wrapper">
+        <input
+          placeholder="Full Name"
+          id="Full-name"
+          name="Full-name"
+          type="text"
+          required
+        />
+        <input placeholder="Rank" id="rank" name="rank" type="text" required />
+        <input
+          placeholder="Position"
+          id="position"
+          name="position"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Platoon"
+          id="platoon"
+          name="platoon"
+          type="text"
+          required
+        />
+        <select id="status" name="status">
+          <option value="Active">Active</option>
+          <option value="Reserve">Reserve</option>
+          <option value="Retired">Retired</option>
+        </select>
+        <input
+          placeholder="Mission Time (seconds)"
+          id="mission-time"
+          name="mission-time"
+          type="number"
+          min="0"
+          required
+        />
+        <input value="Save Changes" id="submit" name="submit" type="submit" />
+        <input value="Cancel" id="Cancel" name="Cancel" type="button" />
+      </form>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
